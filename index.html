@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/ipad-retina-icon.png" />
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script type="text/javascript" src="libs/globalize.js"></script>
+	<script type="text/javascript" src="lang/sv.js"></script>
+    <script type="text/javascript" src="libs/knockout-3.0.0.js"></script>
+	<script type="text/javascript" src="libs/zepto.min.js"></script>
+	<script type="text/javascript" src="libs/touch.js"></script>
+</head>
+<body>
+<div class="app">
+		<!-- List view   -->
+		<section class="startpage">
+				<div class="choice-container vertical-center">
+					<ul class="choice-list clearfix">
+						<li class="mobile" data-id="swish">
+							<span class="icon-holder round">
+								<i class="fa fa-mobile-phone"></i>
+							</span>
+							<p data-bind="text: mobile"></p>
+						</li>
+						<li data-id="netbank">
+							<span class="icon-holder round">
+								<i class="fa fa-laptop"></i>
+							</span>
+							<p data-bind="text: netbank"></p>
+						</li>
+						<li data-id="locator">	
+							<span class="icon-holder round">
+								<i class="fa fa-location-arrow"></i>
+							</span>
+							<p data-bind="text: locator"></p>
+						</li>
+					</ul>
+					<ul class="choice-list clearfix">
+						<li class="mobile" data-id="customer">
+							<span class="icon-holder round">
+								<i class="fa fa-users"></i>
+							</span>
+							<p data-bind="text: customer"></p>
+						</li>
+						<li data-id="programs">
+							<span class="icon-holder round">
+								<i class="fa fa-file-text-o"></i>
+							</span>
+							<p data-bind="text: programs"></p>
+						</li>
+						<li data-id="savings">	
+							<span class="icon-holder round">
+								<i class="fa fa-money"></i>
+							</span>
+							<p data-bind="text: savings"></p>
+						</li>
+					</ul>
+			</div>
+		</section>
+		<!-- Details view   -->	
+		<section class="iframe-wrapper">
+			<div class="close-btn"><i class="fa fa-times-circle-o"></i></div>
+			<iframe class="swish" src="http://www.nordea.se/Privat/Vardagstjänster/Mobila+tjänster/Swish+-+betalningar+har+aldrig+varit+enklare+eller+snabbare/1591422.html?WT.SEG_1=4690&searchPhrase=mobilbank&bb=0#7ead6e9b-0799-4020-a305-f0c773c0e1ca"></iframe>
+			<iframe class="netbank" src="http://www.nordea.se/Privat/Vardagstjänster/Internet+och+telefon/Internetbanken+-+ger+dig+bra+kontroll+över+din+ekonomi/773492.html?searchPhrase=internet+bank&bb=0"></iframe>
+			<iframe class="locator" src="http://www.nordea.se/Om+Nordea/Om+Nordea/Kontakt/Hitta+kontor+uttagsautomater+och+ombud+med+öppettider/213724.html?lnkID=contact-box_find-a-branch_19-03-2012"></iframe>
+			<iframe class="customer" src="http://www.nordea.se/Privat/Kontakt/Bli+kund+i+Nordea/201964.html?WT.svl=mega-menu_Kontakt_Contact_Bli-kund-i-nordea"></iframe>
+			<iframe class="programs" src="http://www.nordea.se/Privat/Kundprogram/Kundprogram/205974.html"></iframe>
+			<iframe class="savings" src="http://www.nordea.se/Privat/Pension/Pensionssparande+olika+typer+av+eget+pensionssparande/Räkna+ut+din+pension/1135822.html?searchPhrase=pension&bb=0"></iframe>
+		</section>
+	</div>
+	<div class="loader-holder">
+		<div class="loadtext">
+			<img src="img/nordea_logo.png" />
+			<p>LOADING</p>
+			<p class="counter">0</p>
+		</div>
+	</div>	
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
